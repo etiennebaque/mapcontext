@@ -1,2 +1,104 @@
-<h1>Welcome to MapContext</h1>
-<p>This is the home page of MapContext</p>
+<!-- topbar starts -->
+<div class="navbar navbar-default" role="navigation">
+
+  <div class="navbar-inner">
+
+    <button type="button" class="navbar-toggle pull-left animated flip">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"> <%= image_tag 'aj_logo.png', class: 'hidden-xs' %>
+      <span>Map Context</span></a>
+
+  </div>
+</div>
+<!-- topbar ends -->
+
+<!-- Main content - start -->
+<div class="ch-container">
+
+  <!-- Map section - start -->
+  <div class="row">
+    <div id="map"></div>
+  </div>
+  <!-- Map section - end -->
+
+
+
+  <div class="row">
+    <!-- Text editor section - start -->
+    <div class="box col-sm-6 col-lg-9">
+      <div class="box-inner">
+        <div class="box-header well" data-original-title="">
+          <h2>
+            <i class="glyphicon glyphicon-map-marker"></i> Text Editor
+          </h2>
+        </div>
+
+        <div class="box-content">
+          <textarea class="form-control" rows="20">Text to be typed here...</textarea>
+          <!-- <div id="editor"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Text editor section - end -->
+
+    <!-- Right-hand side column - start -->
+    <div class="box col-sm-6 col-lg-3">
+      <div class="box-inner">
+        <div class="box-header well" data-original-title="">
+          <h2>
+            <i class="glyphicon glyphicon-map-marker"></i> Info for map
+          </h2>
+        </div>
+
+        <div class="box-content">
+          <h4>Locations</h4>
+          <ul>
+            <li>Chicago</li>
+            <li>Boston</li>
+          </ul>
+
+          <h4>Tags</h4>
+          <ul>
+            <li>Ferguson</li>
+            <li>Occupy</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- Right-hand side column - end -->
+  </div>
+
+
+
+
+
+
+  <hr>
+
+  <footer class="row">
+    <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="http://usman.it" target="_blank">Muhammad
+      Usman</a> 2012 - 2014</p>
+
+    <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Powered by: <a
+    href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
+  </footer>
+
+</div>
+<!-- Main content - end -->
+
+
+
+<!-- external javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<%= render 'shared/includedJs' %>
+
+<script>
+    initializeMap();
+</script>
