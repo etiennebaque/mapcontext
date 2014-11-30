@@ -51,7 +51,7 @@
             <input type="radio" id="choice_tag" name="choice" value="tag" checked>Tag it (get related stories)<br><br>
               </label>
             </div>
-            <a class="btn btn-success" id="selected_text_confirm" href="#">Map this information</a> <span id="processNotification"></span>
+            <a class="btn btn-success" id="selected_text_confirm" href="#">Map it</a> <span class="processNotification" style="display:none">Getting related stories from the New York Times...</span>
           </span>
           <span id="default_description">
             Select a word (or an expression in your text) to implemented it on the map.
@@ -71,7 +71,28 @@
         </div>
 
         <div class="box-content">
-          <textarea class="form-control" rows="20" id="texteditor">This is a story about police brutality, taking place in Pittsburg. Last night, this event occured...</textarea>
+          <form role="form">
+            <div class="form-group">
+              <label for="articletitle">Title:</label>
+              <input type="text" class="form-control" id="articletitle" value="Ferguson protests target retailers across US">
+            </div>
+            <div class="form-group">
+              <label for="texteditor">Body:</label>
+              <textarea class="form-control" rows="20" id="texteditor">
+                Demonstrators have forced the closure a shoppingsj mall near Ferguson in the US state of Missouri, at the start of the holiday shopping season as protests over the killing of an unarmed black teen by a white police officer target some retailers around the country.
+
+                After a quiet Thanksgiving Day, protesters were out in force on Friday to vent their anger at Monday's decision by a grand jury not to indict Officer Darren Wilson in the August 9 shooting death of 18-year-old Michael Brown in the St Louis suburb.
+
+                [...]
+
+                Similar protests were staged in other cities, including New York, Chicago, Seattle and San Francisco, Pittsburg, and Oakland in California, on Black Friday, when many retailers offer deep discounts and shoppers traditionally turn out in droves.
+
+                [...]
+
+                The shooting of Michael Brown took place at 2969 Canfield Drive, Ferguson.
+              </textarea>
+            </div>
+          </form>
           <!-- <div id="editor"></div> -->
         </div>
       </div>
@@ -93,7 +114,7 @@
           </div>
 
           <br>
-          
+
           <h4>Tags</h4>
           <div id="tag_list">
           </div>

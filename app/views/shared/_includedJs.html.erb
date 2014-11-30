@@ -33,12 +33,18 @@
 
 <!-- <%= javascript_include_tag 'bootstrap-wysiwyg' %> -->
 
+
+<!-- <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script> -->
+
 <!-- Load jQuery.selection plugin-->
 <%= javascript_include_tag 'jquery.selection' %>
-
 <%= javascript_include_tag 'general' %>
-
 <%= javascript_include_tag 'map_settings' %>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+<%= javascript_include_tag 'SliderControl' %>
+<%= javascript_include_tag 'jquery-ui' %>
 
 <!-- jquery_ujs is already included in application.js. However, some Bootstrap themes might override it, causing
  functionalities like Devise sign out no to work. Therefore, we include jquery_ujs after loading all scripts -->

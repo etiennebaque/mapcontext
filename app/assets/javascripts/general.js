@@ -19,9 +19,11 @@ $(document).ready(function(){
 
         if ($("input[id='choice_location']:checked").val()){
             // We're adding a 'location' to map
-            $("#location_list").append('<button class="btn btn-danger btn-xs">'+selection+'</button>');;
+            $("#location_list").append('<button class="btn btn-danger btn-xs"><strong>'+selection+'</strong></button>&nbsp;&nbsp;<i class="glyphicon glyphicon-remove"></i><br><br>');
 
-            $('#processNotification').html("<i>Retrieving related stories, and their location...</i>");
+            //$("#location_list").append('<span style="color:blue"><strong>'+Selection+"</span>&#160;X'");
+
+            $('.processNotification').show();
 
             $.ajax({
                 url: "/getLocationInfo",
@@ -39,12 +41,13 @@ $(document).ready(function(){
 
             });
 
-            $('#processNotification').html("");
+            $('.processNotification').hide();
+
         }else if ($("input[id='choice_tag']:checked").val()){
             // We're adding a 'tag'
-            $("#tag_list").append('<button class="btn btn-primary btn-xs">'+selection+'</button>');
+            $("#tag_list").append('<button class="btn btn-primary btn-xs"><strong>'+selection+'</strong></button>&nbsp;&nbsp;<i class="glyphicon glyphicon-remove"></i><br><br>');
 
-            $('#processNotification').html("<i>Retrieving related stories, and their location...</i>");
+            $('.processNotification').show();
 
             $.ajax({
                 url: "/getArticlesByTag",
@@ -57,12 +60,12 @@ $(document).ready(function(){
                     xhr.setRequestHeader("Content-Type", "application/json");
                 },
                 success: function(data) {
-                    putLocationStoriesMarkers(data);
+                    putLocationStoriesMarkers(data)
                 }
 
             });
 
-            $('#processNotification').html("");
+            $('.processNotification').hide();
         }
     });
 
