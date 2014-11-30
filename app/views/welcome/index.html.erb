@@ -9,8 +9,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/"> <%= image_tag 'logo-only.png' %>
-      <span>&nbsp;Map Cake</span></a>
+    <a class="navbar-brand" href="/"> <%= image_tag 'mapcake-logotext.png' %></a>
 
   </div>
 </div>
@@ -42,15 +41,23 @@
             You selected: <span id="selectedtext_value"></span><br><br>
             <div class="radio">
               <label>
-            <input type="radio" id="choice_location" name="choice" value="location" checked>Add as location<br>
+                <input type="radio" id="choice_location" name="choice" value="location" checked>Add as location<br>
                </label>
             </div>
 
             <div class="radio">
               <label>
-            <input type="radio" id="choice_tag" name="choice" value="tag" checked>Tag it (get related stories)<br><br>
+                <input type="radio" id="choice_tag" name="choice" value="tag" checked>Tag it (get related stories)<br><br>
               </label>
             </div>
+
+            <div class="checkbox">
+              <label>
+                <input id="checked_slider" type="checkbox"> Use the version with the time slider (in development - refresh the page before ticking/unticking)
+              </label>
+            </div>
+
+            <br>
             <a class="btn btn-success" id="selected_text_confirm" href="#">Map it</a>
 
           </div>
@@ -80,6 +87,8 @@
             <div class="form-group">
               <label for="texteditor">Body:</label>
               <textarea class="form-control" rows="20" id="texteditor">Demonstrators have forced the closure a shoppingsj mall near Ferguson in the US state of Missouri, at the start of the holiday shopping season as protests over the killing of an unarmed black teen by a white police officer target some retailers around the country.
+
+This is police brutality.
 
 After a quiet Thanksgiving Day, protesters were out in force on Friday to vent their anger at Monday's decision by a grand jury not to indict Officer Darren Wilson in the August 9 shooting death of 18-year-old Michael Brown in the St Louis suburb.
 

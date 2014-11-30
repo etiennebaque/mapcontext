@@ -323,12 +323,13 @@ div.center, p.center, img.center {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     width: 483px;
     font-size: 17px;
+    padding: 0px 0px !important;
 }
 
 .navbar-brand img {
     float: left;
     height: 100%;
-    width: 5%;
+    width: 55%;
     margin-right: 5px;
 }
 

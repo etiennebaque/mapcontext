@@ -141,7 +141,7 @@ class WelcomeController < ApplicationController
     # ---------------------------------
 
     # Time to create the 'feature' nodes, for the GeoJSON object.
-
+    georesults['test'] = []
     result.each do |city, loc_info|
       latitude = loc_info['latitude']
       longitude = loc_info['longitude']
@@ -151,12 +151,24 @@ class WelcomeController < ApplicationController
         feature['type'] = 'Feature'
         feature['properties'] = {}
         feature['geometry'] = {'type' => 'Point', 'coordinates' => [latitude,longitude,1]}
-        feature['properties']['time'] = article_date.gsub('T',' ').gsub('Z','')
+
+        article_date_value = article_date.gsub('T',' ').gsub('Z','')
+        formatted_date = DateTime.strptime(article_date_value, '%Y-%m-%d %H:%M:%S').strftime('%Y-%d-%m %H:%M')
+        feature['properties']['time'] = formatted_date
         #feature['properties']['articles'] = articles
         #feature['properties']['popupContent'] = "test"
         #feature['properties']['city'] = city
 
         georesults['features'] << feature
+
+        articles_html = "<strong>#{city}</strong> - Related story published on #{formatted_date}<br><ul>"
+        articles.each do |art_hash|
+          articles_html += "<li>#{art_hash['title']} - <a href='#{art_hash['url']}'>Read story</a></li>"
+        end
+        articles_html += "</ul>"
+
+        georesults['test'] << [latitude,longitude,{'time' => formatted_date},articles_html]
+
       end
     end
 

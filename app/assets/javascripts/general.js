@@ -49,26 +49,53 @@ $(document).ready(function(){
 
             $('#processNotification').css("display", "block");
 
-            $.ajax({
-                url: "/getArticlesByTag",
-                global: false,
-                type: "GET",
-                data: {tag: selection},
-                cache: false,
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader("Accept", "application/json");
-                    xhr.setRequestHeader("Content-Type", "application/json");
-                },
-                success: function(data) {
-                    putLocationStoriesMarkers(data)
-                    $('#processNotification').css("display", "none");
-                },
-                error: function(data) {
-                    $('#processNotification').css("display", "none");
-                }
+            if($('#checked_slider').is(':checked')) {
+                // We load the development version (with slider)
+                $.ajax({
+                    url: "/getArticlesByTagGeo",
+                    global: false,
+                    type: "GET",
+                    data: {tag: selection},
+                    cache: false,
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("Accept", "application/json");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                    },
+                    success: function(data) {
+                        //putLocationStoriesMarkers(data);
+                        putLocationStoriesGeoMarkers(data);
+                        $('#processNotification').css("display", "none");
+                    },
+                    error: function(data) {
+                        $('#processNotification').css("display", "none");
+                    }
+
+                });
+            }else{
+                // We load the fully functional version (without slider)
+                $.ajax({
+                    url: "/getArticlesByTag",
+                    global: false,
+                    type: "GET",
+                    data: {tag: selection},
+                    cache: false,
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("Accept", "application/json");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                    },
+                    success: function(data) {
+                        //putLocationStoriesMarkers(data);
+                        putLocationStoriesMarkers(data);
+                        $('#processNotification').css("display", "none");
+                    },
+                    error: function(data) {
+                        $('#processNotification').css("display", "none");
+                    }
 
 
-            });
+                });
+            }
+
 
 
         }

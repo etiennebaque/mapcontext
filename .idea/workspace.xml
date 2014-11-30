@@ -29,11 +29,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="448" selection-end="448" vertical-scroll-proportion="-3.7894738" vertical-offset="0" max-vertical-offset="2934">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="11" column="77" selection-start="436" selection-end="436" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="3096">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,7 +38,25 @@
       <file leaf-file-name="charisma-app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="12" selection-start="9211" selection-end="9211" vertical-scroll-proportion="0.0" vertical-offset="5887" max-vertical-offset="12744">
+            <state line="325" column="32" selection-start="9173" selection-end="9173" vertical-scroll-proportion="0.0" vertical-offset="5676" max-vertical-offset="12762">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/general.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="45" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1998">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map_settings.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="16" selection-start="902" selection-end="902" vertical-scroll-proportion="0.36573312" vertical-offset="210" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -50,19 +65,8 @@
       <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="29" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-12.633333" vertical-offset="2879" max-vertical-offset="3474">
+            <state line="167" column="32" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.0" vertical-offset="2615" max-vertical-offset="3690">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/general.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="148" selection-end="148" vertical-scroll-proportion="0.12478336" vertical-offset="0" max-vertical-offset="1512">
-              <folding>
-                <marker date="1417378418272" expanded="true" signature="867:877" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -70,34 +74,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="66" selection-start="237" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1206">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_includedJs.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_includedJs.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1359" selection-end="1439" vertical-scroll-proportion="-7.962963" vertical-offset="433" max-vertical-offset="1026">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map_settings.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-0.6" vertical-offset="558" max-vertical-offset="1872">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_includedCss.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_includedCss.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="664" selection-end="664" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="396">
+            <state line="7" column="26" selection-start="273" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -106,7 +83,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="-13.222222" vertical-offset="237" max-vertical-offset="774">
+            <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="774">
               <folding />
             </state>
           </provider>
@@ -115,7 +92,7 @@
       <file leaf-file-name="_includedMapJs.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_includedMapJs.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="288">
+            <state line="5" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
@@ -144,14 +121,14 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_includedCss.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_includedMapJs.js.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_includedJs.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_includedMapJs.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/map_settings.js" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/general.js" />
       </list>
     </option>
@@ -487,7 +464,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistory" value="welcome&#10;charis&#10;includedcs&#10;_included&#10;production.rb&#10;marker&#10;mar&#10;applica&#10;boots&#10;routes&#10;Gemfile&#10;wel&#10;map_settings&#10;includedJs&#10;application.html&#10;application/&#10;application&#10;application.js&#10;.giti&#10;application.rb&#10;charisma&#10;asse&#10;index&#10;Proc&#10;unico&#10;database.yml" />
+    <property name="SearchEverywhereHistory" value="charisa&#10;applica&#10;strong&#10;index&#10;routes&#10;wel&#10;map&#10;general.js&#10;welcome&#10;charis&#10;includedcs&#10;_included&#10;production.rb&#10;marker&#10;mar&#10;boots&#10;Gemfile&#10;map_settings&#10;includedJs&#10;application.html&#10;application/&#10;application&#10;application.js&#10;.giti&#10;application.rb&#10;charisma&#10;asse&#10;Proc&#10;unico&#10;database.yml" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
@@ -669,7 +646,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2659091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2962963" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -724,12 +701,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/welcome_controller.rb</url>
-          <line>169</line>
+          <line>181</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/welcome_controller.rb</url>
-          <line>164</line>
+          <line>176</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -792,19 +769,14 @@
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="65" selection-start="2071" selection-end="2081" vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="2358">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/general.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="900">
-          <folding>
-            <marker date="1417378418272" expanded="true" signature="867:877" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,10 +832,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="29" selection-start="2444" selection-end="2454" vertical-scroll-proportion="0.0" vertical-offset="1459" max-vertical-offset="1962">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -884,9 +853,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/general.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="216">
-          <folding>
-            <marker date="1417378418272" expanded="true" signature="867:877" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -914,10 +881,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="38" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,76 +984,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_includedJs.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1359" selection-end="1439" vertical-scroll-proportion="-7.962963" vertical-offset="433" max-vertical-offset="1026">
+        <state line="36" column="0" selection-start="1359" selection-end="1439" vertical-scroll-proportion="0.3883495" vertical-offset="408" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_includedCss.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="664" selection-end="664" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="396">
+        <state line="16" column="34" selection-start="664" selection-end="664" vertical-scroll-proportion="0.46601942" vertical-offset="0" max-vertical-offset="618">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_includedMapJs.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="288">
+        <state line="5" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="237" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1206">
+        <state line="7" column="26" selection-start="273" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="32" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.0" vertical-offset="2615" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="-13.222222" vertical-offset="237" max-vertical-offset="774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="12" selection-start="9211" selection-end="9211" vertical-scroll-proportion="0.0" vertical-offset="5887" max-vertical-offset="12744">
+        <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="774">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="448" selection-end="448" vertical-scroll-proportion="-3.7894738" vertical-offset="0" max-vertical-offset="2934">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="29" selection-start="5893" selection-end="5893" vertical-scroll-proportion="-12.633333" vertical-offset="2879" max-vertical-offset="3474">
+        <state line="11" column="77" selection-start="436" selection-end="436" vertical-scroll-proportion="-7.3333335" vertical-offset="0" max-vertical-offset="3096">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-0.6" vertical-offset="558" max-vertical-offset="1872">
+        <state line="325" column="32" selection-start="9173" selection-end="9173" vertical-scroll-proportion="0.0" vertical-offset="5676" max-vertical-offset="12762">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/general.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="148" selection-end="148" vertical-scroll-proportion="0.12478336" vertical-offset="0" max-vertical-offset="1512">
-          <folding>
-            <marker date="1417378418272" expanded="true" signature="867:877" placeholder="..." />
-          </folding>
+        <state line="74" column="45" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="902" selection-end="902" vertical-scroll-proportion="0.36573312" vertical-offset="210" max-vertical-offset="1980">
+          <folding />
         </state>
       </provider>
     </entry>

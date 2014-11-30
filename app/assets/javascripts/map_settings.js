@@ -32,16 +32,24 @@ function putLocationStoriesGeoMarkers(json){
         onEachFeature: onEachFeature
     });*/
 
-    //alert(JSON.stringify(json));
+    //var testlayer = L.geoJson(json);
 
-    var testlayer = L.geoJson(json);
-
-    var sliderControl = L.control.sliderControl({
+    /*var sliderControl = L.control.sliderControl({
         position: "topright",
         layer: testlayer,
-        follow: 3
-    });
+        follow: true
+    });*/
 
+    var test = json['test'];
+    var test_array = [];
+    for (var i = 0; i < test.length; i++){
+        test_array.push(L.marker([test[i][0], test[i][1]], test[i][2]).bindPopup(test[i][3]));
+    }
+
+    layerGroup = L.layerGroup(test_array);
+    var sliderControl = L.control.sliderControl({
+        layer:layerGroup
+    });
     //Make sure to add the slider to the map ;-)
     map.addControl(sliderControl);
     //An initialize the slider
@@ -70,8 +78,6 @@ function putLocationStoriesMarkers(locations_hash){
         var location = location_results[loc_key];
 
         var html = "<strong>"+loc_key+"</strong> - Related stories to '"+tag_value+"'<br><br><ul>";
-
-        console.log(location['articles']);
 
         for (var i = 0; i < location['articles'].length; i++){
             html = html + "<li>"+location['articles'][i]['title']+" - <a href='"+location['articles'][i]['url']+"' target='_blank'>Read article</a></li>";
