@@ -33,12 +33,36 @@
       <div class="box-inner">
         <div class="box-header well" data-original-title="">
           <h2>
+            <i class="glyphicon glyphicon-map-marker"></i> Process data
+          </h2>
+        </div>
+
+        <div class="box-content">
+          <span id="selectedtext" style="display: none">
+            You selected: <span id="selectedtext_value"></span><br><br>
+            <input type="radio" id="choice_location" name="choice" value="location" checked>Add as location<br>
+            <input type="radio" id="choice_tag" name="choice" value="tag" checked>Tag it (get related stories)<br><br>
+            <a class="btn btn-success" id="selected_text_confirm" href="#">Map this information</a> <span id="processNotification"></span>
+          </span>
+          <span id="default_description">
+            Select a word (or an expression in your text) to implemented it on the map.
+          </span>
+        </div>
+
+        <input type="hidden" id="selection" value=""/>
+      </div>
+
+      <br /><br />
+
+      <div class="box-inner">
+        <div class="box-header well" data-original-title="">
+          <h2>
             <i class="glyphicon glyphicon-map-marker"></i> Text Editor
           </h2>
         </div>
 
         <div class="box-content">
-          <textarea class="form-control" rows="20">Text to be typed here...</textarea>
+          <textarea class="form-control" rows="20" id="texteditor">This is a story about police brutality, taking place in Pittsburg. Last night, this event occured...</textarea>
           <!-- <div id="editor"></div> -->
         </div>
       </div>
@@ -56,27 +80,24 @@
 
         <div class="box-content">
           <h4>Locations</h4>
-          <ul>
-            <li>Chicago</li>
-            <li>Boston</li>
-          </ul>
+          <div id="location_list">
+            <ul>
+
+            </ul>
+          </div>
 
           <h4>Tags</h4>
-          <ul>
-            <li>Ferguson</li>
-            <li>Occupy</li>
-          </ul>
+          <div id="tag_list">
+            <ul>
+
+            </ul>
+          </div>
         </div>
       </div>
 
     </div>
     <!-- Right-hand side column - end -->
   </div>
-
-
-
-
-
 
   <hr>
 
@@ -100,5 +121,6 @@
 <%= render 'shared/includedJs' %>
 
 <script>
+
     initializeMap();
 </script>
