@@ -20,7 +20,7 @@ $(document).ready(function(){
        if ($("input[id='choice_location']:checked").val()){
 
        }else if ($("input[id='choice_tag']:checked").val()){
-           $("#tag_list ul").append('<li>'+selection+'</li>');
+           $("#tag_list ul").append('<button class="btn btn-primary btn-xs">'+selection+'</button>');
 
            $('#processNotification').html("<i>Retrieving related stories, and their location...</i>");
 
