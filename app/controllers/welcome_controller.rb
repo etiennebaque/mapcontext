@@ -180,9 +180,9 @@ class WelcomeController < ApplicationController
 
   def getLocationInfo
     result = {}
-    location = URI::encode(params['location'])
+    location = params['location']
 
-    google_geocodes_api = "https://maps.googleapis.com/maps/api/geocode/json?address=#{URI::encode(location)},USA&key=AIzaSyCURVsAEL5JnBtfrvzOj2nBkdB7hT0jzEA"
+    google_geocodes_api = "https://maps.googleapis.com/maps/api/geocode/json?address=#{location.gsub(' ','+')},USA&key=AIzaSyCURVsAEL5JnBtfrvzOj2nBkdB7hT0jzEA"
     api_response = HTTParty.get(google_geocodes_api)
     geocodes_response = JSON.parse(api_response.body);
 

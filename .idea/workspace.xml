@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="335" selection-start="3114" selection-end="3114" vertical-scroll-proportion="0.5586207" vertical-offset="1260" max-vertical-offset="3060">
+            <state line="94" column="0" selection-start="3611" selection-end="3611" vertical-scroll-proportion="-0.6666667" vertical-offset="1674" max-vertical-offset="3060">
               <folding />
             </state>
           </provider>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="32" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.0" vertical-offset="2615" max-vertical-offset="3690">
+            <state line="182" column="33" selection-start="5974" selection-end="5974" vertical-scroll-proportion="0.6523888" vertical-offset="2880" max-vertical-offset="3690">
               <folding />
             </state>
           </provider>
@@ -125,11 +125,11 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_includedMapJs.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/map_settings.js" />
-        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/general.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
       </list>
     </option>
   </component>
@@ -1010,23 +1010,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="32" selection-start="5712" selection-end="5712" vertical-scroll-proportion="0.0" vertical-offset="2615" max-vertical-offset="3690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/charisma-app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="325" column="32" selection-start="9173" selection-end="9173" vertical-scroll-proportion="0.0" vertical-offset="5676" max-vertical-offset="12762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
@@ -1045,9 +1031,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/map_settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="335" selection-start="3114" selection-end="3114" vertical-scroll-proportion="0.5586207" vertical-offset="1260" max-vertical-offset="3060">
+        <state line="94" column="0" selection-start="3611" selection-end="3611" vertical-scroll-proportion="-0.6666667" vertical-offset="1674" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="33" selection-start="5974" selection-end="5974" vertical-scroll-proportion="0.6523888" vertical-offset="2880" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>
