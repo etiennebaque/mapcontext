@@ -1,14 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
 <head>
-  <title>Mapcontext</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Map Context - Al-Jazeera</title>
+
+  <%= render 'shared/includedCss' %>
+  <%= javascript_include_tag 'jquery.min'%>
+
+  <%= csrf_meta_tag %>
+
+  <!-- Map related script -->
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+  <style type="text/css">
+      html,body,#map {
+          width: 100%;
+          height: 350px;
+          margin: 0;
+      }
+
+      #editor {overflow:scroll; max-height:300px}
+  </style>
+
+  <script>
+      var selection = "test";
+      var map = "";
+  </script>
+
+
+  <%= yield :head %>
 </head>
 <body>
 
 <%= yield %>
-
 </body>
 </html>
