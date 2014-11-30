@@ -51,6 +51,23 @@ class WelcomeController < ApplicationController
     end
 
     render json: result
+  end
+
+  def getLocationInfo
+    result = {}
+    location = URI::encode(params['location'])
+
+    google_geocodes_api = "https://maps.googleapis.com/maps/api/geocode/json?address=#{URI::encode(location)},USA&key=AIzaSyCURVsAEL5JnBtfrvzOj2nBkdB7hT0jzEA"
+    api_response = HTTParty.get(google_geocodes_api)
+    geocodes_response = JSON.parse(api_response.body);
+
+    address = geocodes_response['results'][0]
+    geocodes = address['geometry']['location']
+
+    result['latitude'] = geocodes['lat']
+    result['longitude'] = geocodes['lng']
+
+    render json: result
 
   end
 end

@@ -1,0 +1,10 @@
+var selection = "test";
+var map = "";
+
+var new_marker_icon = "<%= j ActionController::Base.helpers.asset_path('assets/marker-icon-red.png') %>";
+
+var newIcon = L.icon ({
+        iconUrl: new_marker_icon,
+        iconAnchor: [12, 41],
+        popupAnchor:  [0, -34]
+        });

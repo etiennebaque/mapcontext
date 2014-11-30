@@ -1,10 +1,6 @@
-/**
- * Created by etienne on 29/11/14.
- */
-
 function initializeMap() {
     L.mapbox.accessToken = 'pk.eyJ1IjoiZXRpZW5uZWJhcXVlIiwiYSI6Ii1naTRRUDQifQ.3EtAu34jEgGWxUy4DCLzqA';
-    map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.4406248, -79.9958864], 6);
+    map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.4406248, -79.9958864], 5);
     // cartodb.createLayer('map',path/to/viz.json).addTo(map);
 }
 
@@ -25,7 +21,7 @@ function getSelected() {
     return false;
 }
 
-function putLocationMarkers(locations_hash){
+function putLocationStoriesMarkers(locations_hash){
 
     Object.keys(locations_hash).forEach(function (loc_key) {
         var location = locations_hash[loc_key];
@@ -44,5 +40,13 @@ function putLocationMarkers(locations_hash){
             .bindPopup(html).openPopup();
 
     })
+}
+
+
+function putLocationMarker(location){
+
+    var html = "Your current story";
+
+    L.marker(([location['latitude'], location['longitude']]), {icon: newIcon}).addTo(map).bindPopup(html).openPopup();
 
 }

@@ -17,7 +17,7 @@
   <style type="text/css">
       html,body,#map {
           width: 100%;
-          height: 350px;
+          height: 400px;
           margin: 0;
       }
 
@@ -25,10 +25,8 @@
   </style>
 
   <script>
-      var selection = "test";
-      var map = "";
+    <%= render 'shared/includedMapJs.js.erb' %>
   </script>
-
 
   <%= yield :head %>
 </head>

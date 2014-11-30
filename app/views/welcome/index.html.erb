@@ -40,8 +40,17 @@
         <div class="box-content">
           <span id="selectedtext" style="display: none">
             You selected: <span id="selectedtext_value"></span><br><br>
+            <div class="radio">
+              <label>
             <input type="radio" id="choice_location" name="choice" value="location" checked>Add as location<br>
+               </label>
+            </div>
+
+            <div class="radio">
+              <label>
             <input type="radio" id="choice_tag" name="choice" value="tag" checked>Tag it (get related stories)<br><br>
+              </label>
+            </div>
             <a class="btn btn-success" id="selected_text_confirm" href="#">Map this information</a> <span id="processNotification"></span>
           </span>
           <span id="default_description">
@@ -81,16 +90,12 @@
         <div class="box-content">
           <h4>Locations</h4>
           <div id="location_list">
-            <ul>
-
-            </ul>
           </div>
 
+          <br>
+          
           <h4>Tags</h4>
           <div id="tag_list">
-            <ul>
-
-            </ul>
           </div>
         </div>
       </div>
@@ -118,9 +123,9 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
+
 <%= render 'shared/includedJs' %>
 
 <script>
-
     initializeMap();
 </script>
