@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('#texteditor').mouseup(function() {
         selection = getSelected();
-        if (selection) {
+        if (selection && selection != '') {
             $('#default_description').hide();
 
             // Show 'selected text' section
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
             //$("#location_list").append('<span style="color:blue"><strong>'+Selection+"</span>&#160;X'");
 
-            $('.processNotification').show();
+            //$('#processNotification').css("display", "block");
 
             $.ajax({
                 url: "/getLocationInfo",
@@ -41,13 +41,13 @@ $(document).ready(function(){
 
             });
 
-            $('.processNotification').hide();
+            //$('#processNotification').css("display", "none");
 
         }else if ($("input[id='choice_tag']:checked").val()){
             // We're adding a 'tag'
             $("#tag_list").append('<button class="btn btn-primary btn-xs"><strong>'+selection+'</strong></button>&nbsp;&nbsp;<i class="glyphicon glyphicon-remove"></i><br><br>');
 
-            $('.processNotification').show();
+            $('#processNotification').css("display", "block");
 
             $.ajax({
                 url: "/getArticlesByTag",
@@ -61,11 +61,16 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                     putLocationStoriesMarkers(data)
+                    $('#processNotification').css("display", "none");
+                },
+                error: function(data) {
+                    $('#processNotification').css("display", "none");
                 }
+
 
             });
 
-            $('.processNotification').hide();
+
         }
     });
 

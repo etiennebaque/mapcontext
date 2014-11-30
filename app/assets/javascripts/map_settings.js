@@ -1,4 +1,5 @@
 function initializeMap() {
+
     L.mapbox.accessToken = 'pk.eyJ1IjoiZXRpZW5uZWJhcXVlIiwiYSI6Ii1naTRRUDQifQ.3EtAu34jEgGWxUy4DCLzqA';
     map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.4406248, -79.9958864], 5);
 
@@ -91,7 +92,7 @@ function putLocationStoriesMarkers(locations_hash){
 
 function putLocationMarker(location){
 
-    var html = "Your current story";
+    var html = location['city'];
 
     L.marker(([location['latitude'], location['longitude']]), {icon: newIcon}).addTo(map).bindPopup(html).openPopup();
 

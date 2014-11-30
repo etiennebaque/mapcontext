@@ -179,6 +179,7 @@ class WelcomeController < ApplicationController
 
     result['latitude'] = geocodes['lat']
     result['longitude'] = geocodes['lng']
+    result['city'] = location
 
     render json: result
 

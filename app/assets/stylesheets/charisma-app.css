@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Shojumaru);
+
 select {
     background-color: #fff;
 }
@@ -316,7 +318,7 @@ div.center, p.center, img.center {
 }
 
 .navbar-brand {
-    font-family: cursive, Arial, serif;
+    font-family: 'Shojumaru', cursive, Arial, serif;
     letter-spacing: 2px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     width: 483px;
@@ -326,7 +328,7 @@ div.center, p.center, img.center {
 .navbar-brand img {
     float: left;
     height: 100%;
-    width: 20%;
+    width: 5%;
     margin-right: 5px;
 }
 
@@ -542,7 +544,7 @@ ul.github-buttons li {
 @media only screen and (max-width: 767px) {
 
     .navbar-brand {
-        font-family: cursive, Arial, serif;
+        font-family: 'Shojumaru', cursive, Arial, serif;
         letter-spacing: 2px;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         width: 40%;
