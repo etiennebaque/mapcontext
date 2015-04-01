@@ -40,11 +40,13 @@ class WelcomeController < ApplicationController
             api_response = HTTParty.get(google_geocodes_api)
             geocodes_response = JSON.parse(api_response.body);
 
-            address = geocodes_response['results'][0]
-            geocodes = address['geometry']['location']
+            if geocodes_response['results'].length > 0
+              address = geocodes_response['results'][0]
+              geocodes = address['geometry']['location']
 
-            result[city]['latitude'] = geocodes['lat']
-            result[city]['longitude'] = geocodes['lng']
+              result[city]['latitude'] = geocodes['lat']
+              result[city]['longitude'] = geocodes['lng']
+            end
           end
 
           article_hash = {}
