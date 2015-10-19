@@ -1,13 +1,8 @@
 function initializeMap() {
 
     L.mapbox.accessToken = 'pk.eyJ1IjoiZXRpZW5uZWJhcXVlIiwiYSI6Ii1naTRRUDQifQ.3EtAu34jEgGWxUy4DCLzqA';
-    map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.4406248, -79.9958864], 5);
-
-    /* map = L.map('map').setView([40.4406248, -79.9958864], 5);
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map); */
-    // cartodb.createLayer('map',path/to/viz.json).addTo(map);
+    map = L.mapbox.map('map', 'mapbox.streets').setView([40.4406248, -79.9958864], 5);
+    
 }
 
 function getSelected() {
